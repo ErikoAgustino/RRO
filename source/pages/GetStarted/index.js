@@ -22,7 +22,7 @@ export default class GetStarted extends Component {
                         <Text style={{ fontSize: 50, fontWeight: "bold", color: "#D86B22" }}>rero.</Text>
                         <Text style={{ fontSize: 20, color: "#D86B22" }} >save time.{"\n"}reserve{"\n"}now</Text>
                     </View>
-                    <ButtonLong title="Get Started" />
+                    <ButtonLong title="Get Started" onPress={() => this.props.navigation.navigate("Login")} />
                 </View>
             </View>
         )

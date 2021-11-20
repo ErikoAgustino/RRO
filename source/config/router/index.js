@@ -4,6 +4,7 @@ import Home from '../../pages/Home';
 import { NavigationContainer } from '@react-navigation/native';
 import GetStarted from '../../pages/GetStarted';
 import Login from '../../pages/Login';
+import Signup from '../../pages/Signup';
 
 const Stack = createStackNavigator();
 
@@ -11,8 +12,9 @@ function Router() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
                 <Stack.Screen name="GetStarted" component={GetStarted} options={{ headerShown: false }} />
+                <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+                <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />
                 <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>

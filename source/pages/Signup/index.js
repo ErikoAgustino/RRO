@@ -6,7 +6,7 @@ import ButtonLong from "../../components/Atoms/ButtonLong";
 import TextFieldA from "../../components/Atoms/TextFieldA";
 import { TextInput, TouchableOpacity } from "react-native-gesture-handler";
 
-export default class Login extends Component {
+export default class Signup extends Component {
     render() {
         return (
             <View style={{ flex: 1, backgroundColor: "#FEDC78" }}>
@@ -21,27 +21,24 @@ export default class Login extends Component {
                 </View>
                 <View style={{ flex: 1, paddingHorizontal: 30, paddingTop: 40, backgroundColor: "#FFFFFF", borderTopLeftRadius: 25, borderTopRightRadius: 25 }}>
                     <View>
-                        <Text style={{ fontSize: 24, fontWeight: "bold" }}>Welcome Back!</Text>
-                        <Text style={{ fontSize: 16 }}>Enter your login details</Text>
+                        <Text style={{ fontSize: 24, fontWeight: "bold" }}>Getting started</Text>
+                        <Text style={{ fontSize: 16 }}>Create account to continue!</Text>
                     </View>
 
-                    <View style={{ marginBottom: 150, marginTop: 50 }}>
+                    <View style={{ marginBottom: 100, marginTop: 20 }}>
+                        <TextFieldA textplaceholder="Email" />
                         <TextFieldA textplaceholder="Username" />
                         <TextFieldA textplaceholder="Password" secureText={true} />
-                        <View style={{ marginTop: 30 }}>
-                            <TouchableOpacity>
-                                <Text style={{ fontSize: 16, color: "#D86B22" }}>Forget password?</Text>
-                            </TouchableOpacity>
-                        </View>
+                        <TextFieldA textplaceholder="Confirm password" secureText={true} />
                     </View>
 
 
                     <View>
-                        <ButtonLong title="Sign in" onPress={() => this.props.navigation.navigate('Home')} />
+                        <ButtonLong title="Sign up" />
                         <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: 10 }}>
-                            <Text style={{ fontSize: 16 }}>Don't have account? </Text>
-                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Signup')}>
-                                <Text style={{ fontSize: 16, color: "#D86B22" }}>Sign up</Text>
+                            <Text style={{ fontSize: 16 }}>Already have an account? </Text>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Login')}>
+                                <Text style={{ fontSize: 16, color: "#D86B22" }}>Sign in</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
