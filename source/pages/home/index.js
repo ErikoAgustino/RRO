@@ -4,12 +4,12 @@ import { StatusBar } from 'expo-status-bar';
 import { ScrollView } from "react-native-gesture-handler";
 import { View } from "react-native";
 import NavigationBar from "../../containers/NavigationBar";
-import NearMeView from "../../components/NearMeView";
-import RecentlyView from "../../components/RecentlyView";
-import CravingView from "../../components/CravingView";
-import UserView from "../../components/UserView";
+import NearMeView from "../../containers/NearMeView";
+import RecentlyView from "../../containers/RecentlyView";
+import CravingView from "../../containers/CravingView";
+import UserView from "../../containers/UserView";
 
-export default class home extends Component {
+export default class Home extends Component {
     render() {
         return (
             <View style={{ flex: 1, backgroundColor: "#FFFFFF" }}>
@@ -21,7 +21,7 @@ export default class home extends Component {
                 />
                 <ScrollView>
                     <View style={{ flex: 1, padding: 16 }}>
-                        <UserView />
+                        <UserView username="Joseph" />
                         <RecentlyView />
                         <CravingView />
                         <NearMeView />

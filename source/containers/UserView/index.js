@@ -6,7 +6,7 @@ const UserView = (props) => {
         <View>
             <View style={{ marginTop: 30, marginBottom: 16, flexDirection: "row" }}>
                 <View style={{ flex: 1 }}>
-                    <Text style={{ fontSize: 30, fontWeight: "900" }}>Hey Joseph!</Text>
+                    <Text style={{ fontSize: 30, fontWeight: "900" }}>Hey {props.username}!</Text>
                 </View>
                 <View>
                     <Image style={{ width: 32, height: 32 }} source={require("../../assets/bell.png")} />
