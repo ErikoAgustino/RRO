@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "424777141057",
+    "project_id": "rero-b4b7a",
+    "storage_bucket": "rero-b4b7a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424777141057:android:6d288924d5e27c5ebc2fc0",
+        "android_client_info": {
+          "package_name": "com.powerpuff.rero"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "424777141057-vc9gl5qd3iqdih4eb12fujsien9qcq1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAagZMGv5xpgddgPQqdptV5zTWKZFZH7cw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "424777141057-vc9gl5qd3iqdih4eb12fujsien9qcq1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

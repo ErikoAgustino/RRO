@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./source/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.powerpuff.rero"
     },
     "web": {
       "favicon": "./source/assets/favicon.png"
