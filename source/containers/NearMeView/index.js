@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image, ScrollView } from 'react-native';
 import NearMeViewItem from '../../components/Molecules/NearMeViewItem';
 
-const NearMeView = (props) => {
+const NearMeView = ({ NearMeRestaurants }) => {
     return (
         <View style={{ marginBottom: 20 }}>
             <View style={{ flexDirection: "row", marginBottom: 10 }}>
@@ -15,11 +15,12 @@ const NearMeView = (props) => {
             </View>
 
             <ScrollView horizontal style={{ flexDirection: "row" }}>
-
                 {/**item */}
-                <NearMeViewItem restaurantName="Rumah Makan Ibu Sri" restaurantLocation="Jln. Orchard No. 19" />
-                <NearMeViewItem restaurantName="Cafe Halaman" restaurantLocation="Jln. Surya Sumantri No. 49" />
-
+                {NearMeRestaurants.map((restaurant) => {
+                    return (
+                        <NearMeViewItem restaurantName={restaurant.name} restaurantLocation={restaurant.location} />
+                    );
+                })}
             </ScrollView>
         </View>
     );

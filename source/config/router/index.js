@@ -13,7 +13,6 @@ function Router() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
-                <Stack.Screen name="test" component={test} />
                 <Stack.Screen name="GetStarted" component={GetStarted} options={{ headerShown: false }} />
                 <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
                 <Stack.Screen name="Signup" component={Signup} options={{ headerShown: false }} />

@@ -32,7 +32,8 @@ export default class test extends Component {
             this.setState({
                 isLoading: true,
             });
-            this.dbRef.add({
+            this.dbRef.doc(this.state.email).set({
+                id: this.state.email,
                 name: this.state.name,
                 email: this.state.email,
                 mobile: this.state.mobile,

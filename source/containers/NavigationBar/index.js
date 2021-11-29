@@ -7,12 +7,15 @@ const NavigationBar = (props) => {
 
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <Image style={{ width: 40, height: 40 }} source={require("../../assets/home.png")} />
+                <Text>Home</Text>
             </View>
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <Image style={{ width: 40, height: 40 }} source={require("../../assets/schedule.png")} />
+                <Text>Reserve</Text>
             </View>
             <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
                 <Image style={{ width: 40, height: 40 }} source={require("../../assets/user.png")} />
+                <Text>Profile</Text>
             </View>
 
         </View>
